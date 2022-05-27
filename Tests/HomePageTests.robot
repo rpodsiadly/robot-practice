@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  Page Object in Robot Framework
+Documentation  Page Object in Robot Framework @ automationpractice.com
 Library  SeleniumLibrary
 Resource  ../Resources/PageObject/KeywordDefinitionFiles/HomePage.robot
 Resource  ../Resources/PageObject/KeywordDefinitionFiles/Common.robot
@@ -10,32 +10,35 @@ ${site_url}  http://automationpractice.com/
 ${browser}  Firefox
 
 *** Test Cases ***
-Verify Successfull loading homepage
+Verify successful loading homepage
     Opening Browser  ${site_url}  ${browser}
     Verify home page loaded successfully
     Close Browser
-Verify successfully navigate to Authentication page
+Verify successfully navigation to Authentication page
     Opening Browser  ${site_url}  ${browser}
-    Click link   ${SIGN_IN}
+    Go to subpage    ${AUTHENTICATION}
     Verify authentication page is successfully loaded
     Close Browser
-Verify successfully navigate to Women subpage
+Verify successfully navigation to Women subpage
     Opening Browser  ${site_url}  ${browser}
-    Click link  ${MENU_WOMEN}
+    Go to subpage  ${MENU_WOMEN}
     Verify women subpage is successfully loaded
     Close Browser
-Verify successfully navigate to Dresses subpage
+Verify successfully navigation to Dresses subpage
     Opening Browser  ${site_url}  ${browser}
-    Click link   ${MENU_DRESSES}
+    Go to subpage   ${MENU_DRESSES}
     Verify dresses subpage is successfully loaded
     Close Browser
-Verify successfully navigate to T-shirts subpage
+Verify successfully navigation to T-shirts subpage
     Opening Browser  ${site_url}  ${browser}
-    Click link   ${MENU_TSHIRTS}
+    Go to subpage   ${MENU_TSHIRTS}
     Verify t-shirts subpage is successfully loaded
     Close Browser
-Verify successfully adding product from dresses to cart with value
+Verify successfully addition of product to cart with given value
     Opening Browser  ${site_url}  ${browser}
-    Click link   ${MENU_DRESSES}
-    Add product to cart
+    Go to subpage   ${MENU_DRESSES}
+    Add product from dresses to cart with value   ${hp_price_of_product_we_looking_for}
+    Close summary cart
+    Verify successfully added product to cart
+    Close Browser
 *** Keywords ***

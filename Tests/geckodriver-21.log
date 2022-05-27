@@ -1,6 +1,0 @@
-1653596510482	geckodriver	INFO	Listening on 127.0.0.1:47993
-1653596510500	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56877" "-no-remote" "-profile" "/tmp/rust_mozprofilevCTEuG"
-
-(firefox:188002): Gtk-WARNING **: 22:21:50.546: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
-
-(firefox:188002): Gtk-WARNING **: 22:21:50.870: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
