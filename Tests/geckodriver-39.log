@@ -1,0 +1,25 @@
+1653597506643	geckodriver	INFO	Listening on 127.0.0.1:47157
+1653597507153	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37893" "-no-remote" "-profile" "/tmp/rust_mozprofileOLUNgn"
+
+(firefox:206196): Gtk-WARNING **: 22:38:27.187: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:206196): Gtk-WARNING **: 22:38:27.426: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:206196): Gtk-WARNING **: 22:38:27.473: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:206196): Gtk-WARNING **: 22:38:27.495: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1653597507597	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOLUNgn/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37893/devtools/browser/10c1b1c5-f3bf-4167-88ff-c4e964cf968f
+1653597508502	Marionette	INFO	Listening on port 39333
+1653597508567	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653597533272	Marionette	INFO	Stopped listening on port 39333
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+

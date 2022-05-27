@@ -1,0 +1,22 @@
+1653597223856	geckodriver	INFO	Listening on 127.0.0.1:33791
+1653597223859	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52895" "-no-remote" "-profile" "/tmp/rust_mozprofileEDifyP"
+
+(firefox:201825): Gtk-WARNING **: 22:33:43.905: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:201825): Gtk-WARNING **: 22:33:44.186: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:201825): Gtk-WARNING **: 22:33:44.235: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:201825): Gtk-WARNING **: 22:33:44.257: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1653597224355	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEDifyP/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52895/devtools/browser/d1092058-9913-4927-9a2f-1ff7c13cd3c4
+1653597225287	Marionette	INFO	Listening on port 37699
+1653597225373	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

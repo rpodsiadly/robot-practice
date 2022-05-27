@@ -1,0 +1,28 @@
+1653596624731	geckodriver	INFO	Listening on 127.0.0.1:51919
+1653596625241	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51265" "-no-remote" "-profile" "/tmp/rust_mozprofileqhVcEN"
+
+(firefox:191643): Gtk-WARNING **: 22:23:45.281: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:191643): Gtk-WARNING **: 22:23:45.530: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:191643): Gtk-WARNING **: 22:23:45.578: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:191643): Gtk-WARNING **: 22:23:45.599: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1653596625726	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqhVcEN/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51265/devtools/browser/ff8b08ae-1c98-4850-a3eb-960d2d7fe93d
+1653596626744	Marionette	INFO	Listening on port 38313
+1653596626759	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653596628464	Marionette	INFO	Stopped listening on port 38313
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1653596628499	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[2022-05-26T20:23:48Z ERROR glean] Can't persist ping lifetime data: Error { kind: Rkv(IoError(Os { code: 2, kind: NotFound, message: "Nie ma takiego pliku ani katalogu" })) }
+JavaScript error: resource://gre/modules/TerminatorTelemetry.jsm, line 71: AbortError: IOUtils: Shutting down and refusing additional I/O tasks
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+

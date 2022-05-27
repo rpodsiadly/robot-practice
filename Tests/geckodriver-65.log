@@ -1,0 +1,23 @@
+1653598290105	geckodriver	INFO	Listening on 127.0.0.1:48753
+1653598290120	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58299" "-no-remote" "-profile" "/tmp/rust_mozprofileosI0JG"
+
+(firefox:226231): Gtk-WARNING **: 22:51:30.143: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:226231): Gtk-WARNING **: 22:51:30.381: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:226231): Gtk-WARNING **: 22:51:30.427: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:226231): Gtk-WARNING **: 22:51:30.449: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1653598290547	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileosI0JG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58299/devtools/browser/1d67fae7-c7e4-4220-93a9-0fdb764a12ea
+1653598291485	Marionette	INFO	Listening on port 43793
+1653598291533	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653598296892	Marionette	INFO	Stopped listening on port 43793
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+

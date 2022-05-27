@@ -1,0 +1,20 @@
+1653598240396	geckodriver	INFO	Listening on 127.0.0.1:53305
+1653598240905	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "33775" "-no-remote" "-profile" "/tmp/rust_mozprofileafdIbv"
+
+(firefox:224677): Gtk-WARNING **: 22:50:40.938: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:224677): Gtk-WARNING **: 22:50:41.173: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:224677): Gtk-WARNING **: 22:50:41.221: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:224677): Gtk-WARNING **: 22:50:41.243: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1653598241343	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileafdIbv/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:33775/devtools/browser/c2c7146f-f70d-4645-b5c0-1f92c3fd30da
+1653598242172	Marionette	INFO	Listening on port 46553
+1653598242218	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653598250084	Marionette	INFO	Stopped listening on port 46553

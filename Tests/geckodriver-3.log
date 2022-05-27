@@ -1,0 +1,22 @@
+1653593389536	geckodriver	INFO	Listening on 127.0.0.1:39015
+1653593389542	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41073" "-no-remote" "-profile" "/tmp/rust_mozprofilejJsbas"
+
+(firefox:123134): Gtk-WARNING **: 21:29:49.571: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:123134): Gtk-WARNING **: 21:29:49.839: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:123134): Gtk-WARNING **: 21:29:49.886: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+
+(firefox:123134): Gtk-WARNING **: 21:29:49.908: Theme parsing error: main-dark.css:2470:0: Expected a valid selector
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1653593390011	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejJsbas/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41073/devtools/browser/411eddb5-d344-4776-9c7a-9362bc0cccad
+1653593390940	Marionette	INFO	Listening on port 35147
+1653593390958	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653593395096	Marionette	INFO	Stopped listening on port 35147
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
