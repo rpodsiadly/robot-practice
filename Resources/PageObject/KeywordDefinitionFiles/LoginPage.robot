@@ -13,6 +13,7 @@ Fill in password field
     Input password    ${PASSWORD_FIELD_LP}    ${password}
 Log in
     Click element    ${SIGNIN_BUTTON}
+    Sleep    1
 Verify information about login
     [Arguments]    ${alert}
     Wait until element is visible    ${ALERT_FIELD}    timeout=10
