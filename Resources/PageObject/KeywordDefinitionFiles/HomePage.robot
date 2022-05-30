@@ -32,6 +32,5 @@ Close summary cart
     Click element    ${SUMMARYCARD_CLOSE}
 Verify successfully added product to cart
     ${quantity}=    Get element attribute    ${CART_QUANTITY}    attribute=textContent
-    Log to console    ${quantity}
     Should contain    ${quantity}     1
 
