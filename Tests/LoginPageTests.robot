@@ -47,6 +47,7 @@ Verify negative login with wrong password
     Fill in password field    ${login_password_positive}333
     Log in
     Verify information about login    ${alert_login_auth_failed}
+    Close browser
 Verify positive login
     Opening Browser    ${site_url}    ${browser}
     Fill in login field    ${login_email_positive}

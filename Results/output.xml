@@ -1,0 +1,2302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.8.10 on linux)" generated="20220530 17:27:08.905" rpa="false" schemaversion="2">
+<suite id="s1" name="HomePageTests &amp; LoginPageTests &amp; RegistrationPageTests">
+<suite id="s1-s1" name="HomePageTests" source="/home/robert/Pulpit/tester/robot-practice/Tests/HomePageTests.robot">
+<test id="s1-s1-t1" name="Verify successful loading homepage">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:27:09.030" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/'.</msg>
+<msg timestamp="20220530 17:27:09.030" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-12.log</msg>
+<status status="PASS" starttime="20220530 17:27:09.030" endtime="20220530 17:27:15.386"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:27:15.386" endtime="20220530 17:27:15.581"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:27:15.581" endtime="20220530 17:27:15.583"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:09.029" endtime="20220530 17:27:15.583"/>
+</kw>
+<kw name="Verify home page loaded successfully" library="HomePage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${hp_head_title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220530 17:27:15.584" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20220530 17:27:15.583" endtime="20220530 17:27:15.584"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:15.583" endtime="20220530 17:27:15.585"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:27:15.585" endtime="20220530 17:27:15.963"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:09.029" endtime="20220530 17:27:15.964"/>
+</test>
+<test id="s1-s1-t2" name="Verify successfully navigation to Authentication page">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:27:15.965" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/'.</msg>
+<msg timestamp="20220530 17:27:15.965" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-13.log</msg>
+<status status="PASS" starttime="20220530 17:27:15.965" endtime="20220530 17:27:23.551"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:27:23.552" endtime="20220530 17:27:23.742"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:27:23.742" endtime="20220530 17:27:23.744"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:15.964" endtime="20220530 17:27:23.744"/>
+</kw>
+<kw name="Go to subpage" library="HomePage">
+<arg>${SIGN_IN}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${subpage}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220530 17:27:23.744" level="INFO">Clicking link 'partial link:Sign in'.</msg>
+<status status="PASS" starttime="20220530 17:27:23.744" endtime="20220530 17:27:26.080"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220530 17:27:27.081" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220530 17:27:26.080" endtime="20220530 17:27:27.081"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:23.744" endtime="20220530 17:27:27.082"/>
+</kw>
+<kw name="Verify authentication page is successfully loaded" library="HomePage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${ap_head_title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220530 17:27:27.087" level="INFO">Page title is 'Login - My Store'.</msg>
+<status status="PASS" starttime="20220530 17:27:27.082" endtime="20220530 17:27:27.087"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:27.082" endtime="20220530 17:27:27.088"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:27:27.088" endtime="20220530 17:27:27.469"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:15.964" endtime="20220530 17:27:27.470"/>
+</test>
+<test id="s1-s1-t3" name="Verify successfully navigation to Women subpage">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:27:27.471" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/'.</msg>
+<msg timestamp="20220530 17:27:27.471" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-14.log</msg>
+<status status="PASS" starttime="20220530 17:27:27.471" endtime="20220530 17:27:36.047"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:27:36.047" endtime="20220530 17:27:36.239"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:27:36.239" endtime="20220530 17:27:36.242"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:27.470" endtime="20220530 17:27:36.242"/>
+</kw>
+<kw name="Go to subpage" library="HomePage">
+<arg>${MENU_WOMEN}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${subpage}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220530 17:27:36.242" level="INFO">Clicking link 'xpath://div[contains(@id,'block_top_menu')]/ul/li/a[contains(@title,'Women')]'.</msg>
+<status status="PASS" starttime="20220530 17:27:36.242" endtime="20220530 17:27:39.480"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220530 17:27:40.481" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220530 17:27:39.480" endtime="20220530 17:27:40.481"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:36.242" endtime="20220530 17:27:40.481"/>
+</kw>
+<kw name="Verify women subpage is successfully loaded" library="HomePage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${hp_head_title_women_dir}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220530 17:27:40.487" level="INFO">Page title is 'Women - My Store'.</msg>
+<status status="PASS" starttime="20220530 17:27:40.482" endtime="20220530 17:27:40.487"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:40.482" endtime="20220530 17:27:40.487"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:27:40.488" endtime="20220530 17:27:40.877"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:27.470" endtime="20220530 17:27:40.877"/>
+</test>
+<test id="s1-s1-t4" name="Verify successfully navigation to Dresses subpage">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:27:40.879" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/'.</msg>
+<msg timestamp="20220530 17:27:40.879" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-15.log</msg>
+<status status="PASS" starttime="20220530 17:27:40.878" endtime="20220530 17:27:48.969"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:27:48.970" endtime="20220530 17:27:49.154"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:27:49.154" endtime="20220530 17:27:49.155"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:40.878" endtime="20220530 17:27:49.156"/>
+</kw>
+<kw name="Go to subpage" library="HomePage">
+<arg>${MENU_DRESSES}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${subpage}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220530 17:27:49.156" level="INFO">Clicking link 'xpath://div[contains(@id,'block_top_menu')]/ul/li/a[contains(@title,'Dresses')]'.</msg>
+<status status="PASS" starttime="20220530 17:27:49.156" endtime="20220530 17:27:52.624"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220530 17:27:53.625" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220530 17:27:52.624" endtime="20220530 17:27:53.625"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:49.156" endtime="20220530 17:27:53.625"/>
+</kw>
+<kw name="Verify dresses subpage is successfully loaded" library="HomePage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${hp_head_title_dresses_dir}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220530 17:27:53.630" level="INFO">Page title is 'Dresses - My Store'.</msg>
+<status status="PASS" starttime="20220530 17:27:53.626" endtime="20220530 17:27:53.630"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:53.625" endtime="20220530 17:27:53.630"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:27:53.631" endtime="20220530 17:27:54.008"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:40.878" endtime="20220530 17:27:54.008"/>
+</test>
+<test id="s1-s1-t5" name="Verify successfully navigation to T-shirts subpage">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:27:54.009" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/'.</msg>
+<msg timestamp="20220530 17:27:54.009" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-16.log</msg>
+<status status="PASS" starttime="20220530 17:27:54.009" endtime="20220530 17:28:02.093"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:28:02.093" endtime="20220530 17:28:02.281"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:28:02.281" endtime="20220530 17:28:02.285"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:54.008" endtime="20220530 17:28:02.285"/>
+</kw>
+<kw name="Go to subpage" library="HomePage">
+<arg>${MENU_TSHIRTS}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${subpage}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220530 17:28:02.286" level="INFO">Clicking link 'xpath://div[contains(@id,'block_top_menu')]/ul/li/a[contains(@title,'T-shirts')]'.</msg>
+<status status="PASS" starttime="20220530 17:28:02.286" endtime="20220530 17:28:04.154"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220530 17:28:05.155" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220530 17:28:04.154" endtime="20220530 17:28:05.155"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:02.285" endtime="20220530 17:28:05.155"/>
+</kw>
+<kw name="Verify t-shirts subpage is successfully loaded" library="HomePage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${hp_head_title_tshirts_dir}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220530 17:28:05.161" level="INFO">Page title is 'T-shirts - My Store'.</msg>
+<status status="PASS" starttime="20220530 17:28:05.156" endtime="20220530 17:28:05.161"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:05.156" endtime="20220530 17:28:05.161"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:28:05.161" endtime="20220530 17:28:05.549"/>
+</kw>
+<status status="PASS" starttime="20220530 17:27:54.008" endtime="20220530 17:28:05.549"/>
+</test>
+<test id="s1-s1-t6" name="Verify successfully addition of product to cart with given value">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:28:05.550" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/'.</msg>
+<msg timestamp="20220530 17:28:05.551" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-17.log</msg>
+<status status="PASS" starttime="20220530 17:28:05.550" endtime="20220530 17:28:12.242"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:28:12.242" endtime="20220530 17:28:12.434"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:28:12.434" endtime="20220530 17:28:12.437"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:05.550" endtime="20220530 17:28:12.437"/>
+</kw>
+<kw name="Go to subpage" library="HomePage">
+<arg>${MENU_DRESSES}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${subpage}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220530 17:28:12.438" level="INFO">Clicking link 'xpath://div[contains(@id,'block_top_menu')]/ul/li/a[contains(@title,'Dresses')]'.</msg>
+<status status="PASS" starttime="20220530 17:28:12.438" endtime="20220530 17:28:17.529"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220530 17:28:18.530" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220530 17:28:17.529" endtime="20220530 17:28:18.530"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:12.437" endtime="20220530 17:28:18.531"/>
+</kw>
+<kw name="Add product from dresses to cart with value" library="HomePage">
+<arg>${hp_product_price}</arg>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>@{products_price}</var>
+<arg>${PRODUCTS_PRICES}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20220530 17:28:18.547" level="INFO">@{products_price} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="8ed13c53-c5c1-4466-805f-57a12ac5d144", element="e79ecd51-b59e-4a5d-9d1f-1618f529c36e")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement ...</msg>
+<status status="PASS" starttime="20220530 17:28:18.533" endtime="20220530 17:28:18.547"/>
+</kw>
+<for flavor="IN">
+<var>${product_price}</var>
+<value>@{products_price}</value>
+<iter>
+<var name="${product_price}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8ed13c53-c5c1-4466-805f-57a12ac5d144", element="e79ecd51-b59e-4a5d-9d1f-1618f529c36e")&gt;</var>
+<if>
+<branch type="IF" condition="'${product_price.text}' == '${value}'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${product_price}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:28:18.571" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="8ed13c53-c5c1-4466-805f-57a12ac5d144", element="e79ecd51-b59e-4a5d-9d1f-1618f529c36e")&gt;'.</msg>
+<status status="PASS" starttime="20220530 17:28:18.571" endtime="20220530 17:28:19.281"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220530 17:28:20.281" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220530 17:28:19.281" endtime="20220530 17:28:20.282"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>'${product_price.text}' == '${value}'</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220530 17:28:20.282" endtime="20220530 17:28:20.301"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:18.571" endtime="20220530 17:28:20.301"/>
+</branch>
+<status status="PASS" starttime="20220530 17:28:18.548" endtime="20220530 17:28:20.301"/>
+</if>
+<status status="PASS" starttime="20220530 17:28:18.548" endtime="20220530 17:28:20.301"/>
+</iter>
+<iter>
+<var name="${product_price}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8ed13c53-c5c1-4466-805f-57a12ac5d144", element="2dc30e94-92cd-444e-a9a7-217f5b111ad7")&gt;</var>
+<if>
+<branch type="IF" condition="'${product_price.text}' == '${value}'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${product_price}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220530 17:28:20.309" endtime="20220530 17:28:20.309"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220530 17:28:20.309" endtime="20220530 17:28:20.309"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>'${product_price.text}' == '${value}'</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20220530 17:28:20.309" endtime="20220530 17:28:20.309"/>
+</kw>
+<status status="NOT RUN" starttime="20220530 17:28:20.309" endtime="20220530 17:28:20.309"/>
+</branch>
+<status status="PASS" starttime="20220530 17:28:20.302" endtime="20220530 17:28:20.310"/>
+</if>
+<status status="PASS" starttime="20220530 17:28:20.301" endtime="20220530 17:28:20.310"/>
+</iter>
+<iter>
+<var name="${product_price}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8ed13c53-c5c1-4466-805f-57a12ac5d144", element="5f61bc66-bc03-485a-8426-b6b87a8b6dfd")&gt;</var>
+<if>
+<branch type="IF" condition="'${product_price.text}' == '${value}'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${product_price}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220530 17:28:20.316" endtime="20220530 17:28:20.316"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220530 17:28:20.316" endtime="20220530 17:28:20.316"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>'${product_price.text}' == '${value}'</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20220530 17:28:20.316" endtime="20220530 17:28:20.316"/>
+</kw>
+<status status="NOT RUN" starttime="20220530 17:28:20.316" endtime="20220530 17:28:20.316"/>
+</branch>
+<status status="PASS" starttime="20220530 17:28:20.310" endtime="20220530 17:28:20.316"/>
+</if>
+<status status="PASS" starttime="20220530 17:28:20.310" endtime="20220530 17:28:20.316"/>
+</iter>
+<iter>
+<var name="${product_price}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8ed13c53-c5c1-4466-805f-57a12ac5d144", element="db250c44-4853-42d4-8003-4e9b5d2bbd9a")&gt;</var>
+<if>
+<branch type="IF" condition="'${product_price.text}' == '${value}'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${product_price}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220530 17:28:20.322" endtime="20220530 17:28:20.322"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220530 17:28:20.322" endtime="20220530 17:28:20.322"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>'${product_price.text}' == '${value}'</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20220530 17:28:20.322" endtime="20220530 17:28:20.322"/>
+</kw>
+<status status="NOT RUN" starttime="20220530 17:28:20.321" endtime="20220530 17:28:20.322"/>
+</branch>
+<status status="PASS" starttime="20220530 17:28:20.316" endtime="20220530 17:28:20.322"/>
+</if>
+<status status="PASS" starttime="20220530 17:28:20.316" endtime="20220530 17:28:20.322"/>
+</iter>
+<iter>
+<var name="${product_price}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8ed13c53-c5c1-4466-805f-57a12ac5d144", element="c78ac22a-c416-417b-b942-20f5c9c725ba")&gt;</var>
+<if>
+<branch type="IF" condition="'${product_price.text}' == '${value}'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${product_price}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220530 17:28:20.326" endtime="20220530 17:28:20.326"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220530 17:28:20.326" endtime="20220530 17:28:20.326"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>'${product_price.text}' == '${value}'</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20220530 17:28:20.326" endtime="20220530 17:28:20.326"/>
+</kw>
+<status status="NOT RUN" starttime="20220530 17:28:20.326" endtime="20220530 17:28:20.326"/>
+</branch>
+<status status="PASS" starttime="20220530 17:28:20.322" endtime="20220530 17:28:20.326"/>
+</if>
+<status status="PASS" starttime="20220530 17:28:20.322" endtime="20220530 17:28:20.326"/>
+</iter>
+<status status="PASS" starttime="20220530 17:28:18.547" endtime="20220530 17:28:20.326"/>
+</for>
+<status status="PASS" starttime="20220530 17:28:18.531" endtime="20220530 17:28:20.326"/>
+</kw>
+<kw name="Close summary cart" library="HomePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SUMMARYCARD_CLOSE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:28:20.327" endtime="20220530 17:28:20.555"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUMMARYCARD_CLOSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:28:20.555" level="INFO">Clicking element 'xpath://span[contains(@class,'cross')]'.</msg>
+<status status="PASS" starttime="20220530 17:28:20.555" endtime="20220530 17:28:20.772"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:20.326" endtime="20220530 17:28:20.772"/>
+</kw>
+<kw name="Verify successfully added product to cart" library="HomePage">
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${quantity}</var>
+<arg>${CART_QUANTITY}</arg>
+<arg>attribute=textContent</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:28:20.805" level="INFO">${quantity} = 1</msg>
+<status status="PASS" starttime="20220530 17:28:20.773" endtime="20220530 17:28:20.805"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${quantity}</arg>
+<arg>1</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20220530 17:28:20.805" endtime="20220530 17:28:20.805"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:20.772" endtime="20220530 17:28:20.806"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:28:20.806" endtime="20220530 17:28:21.207"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:05.549" endtime="20220530 17:28:21.207"/>
+</test>
+<doc>Page Object in Robot Framework @ automationpractice.com</doc>
+<status status="PASS" starttime="20220530 17:27:08.920" endtime="20220530 17:28:21.208"/>
+</suite>
+<suite id="s1-s2" name="LoginPageTests" source="/home/robert/Pulpit/tester/robot-practice/Tests/LoginPageTests.robot">
+<test id="s1-s2-t1" name="Verify negative login with blank fields">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:28:21.241" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php?controller=my-account'.</msg>
+<msg timestamp="20220530 17:28:21.241" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-18.log</msg>
+<status status="PASS" starttime="20220530 17:28:21.241" endtime="20220530 17:28:28.206"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:28:28.206" endtime="20220530 17:28:28.288"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:28:28.288" endtime="20220530 17:28:28.289"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:21.240" endtime="20220530 17:28:28.289"/>
+</kw>
+<kw name="Log in" library="LoginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGNIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:28:28.290" level="INFO">Clicking element 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20220530 17:28:28.290" endtime="20220530 17:28:29.718"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220530 17:28:30.718" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220530 17:28:29.718" endtime="20220530 17:28:30.719"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:28.290" endtime="20220530 17:28:30.719"/>
+</kw>
+<kw name="Verify information about login" library="LoginPage">
+<arg>${alert_login_email}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_FIELD}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:28:30.720" endtime="20220530 17:28:30.743"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${information}</var>
+<arg>${ALERT_FIELD}</arg>
+<arg>attribute=textContent</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:28:30.756" level="INFO">${information} = An email address required.</msg>
+<status status="PASS" starttime="20220530 17:28:30.744" endtime="20220530 17:28:30.757"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${information}</arg>
+<arg>${alert}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20220530 17:28:30.757" endtime="20220530 17:28:30.757"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:30.720" endtime="20220530 17:28:30.757"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:28:30.757" endtime="20220530 17:28:31.138"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:21.240" endtime="20220530 17:28:31.139"/>
+</test>
+<test id="s1-s2-t2" name="Verify negative login with blank email field">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:28:31.140" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php?controller=my-account'.</msg>
+<msg timestamp="20220530 17:28:31.140" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-19.log</msg>
+<status status="PASS" starttime="20220530 17:28:31.140" endtime="20220530 17:28:40.920"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:28:40.920" endtime="20220530 17:28:41.000"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:28:41.000" endtime="20220530 17:28:41.002"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:31.139" endtime="20220530 17:28:41.002"/>
+</kw>
+<kw name="Fill in password field" library="LoginPage">
+<arg>${login_password_positive}</arg>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD_FIELD_LP}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:28:41.002" level="INFO">Typing password into text field 'id:passwd'.</msg>
+<msg timestamp="20220530 17:28:41.008" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220530 17:28:41.032" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220530 17:28:41.002" endtime="20220530 17:28:41.033"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:41.002" endtime="20220530 17:28:41.033"/>
+</kw>
+<kw name="Log in" library="LoginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGNIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:28:41.034" level="INFO">Clicking element 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20220530 17:28:41.033" endtime="20220530 17:28:42.762"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220530 17:28:43.763" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220530 17:28:42.762" endtime="20220530 17:28:43.763"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:41.033" endtime="20220530 17:28:43.763"/>
+</kw>
+<kw name="Verify information about login" library="LoginPage">
+<arg>${alert_login_email}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_FIELD}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:28:43.765" endtime="20220530 17:28:43.788"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${information}</var>
+<arg>${ALERT_FIELD}</arg>
+<arg>attribute=textContent</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:28:43.800" level="INFO">${information} = An email address required.</msg>
+<status status="PASS" starttime="20220530 17:28:43.788" endtime="20220530 17:28:43.800"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${information}</arg>
+<arg>${alert}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20220530 17:28:43.800" endtime="20220530 17:28:43.801"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:43.764" endtime="20220530 17:28:43.801"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:28:43.801" endtime="20220530 17:28:44.177"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:31.139" endtime="20220530 17:28:44.178"/>
+</test>
+<test id="s1-s2-t3" name="Verify negative login with blank password field">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:28:44.180" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php?controller=my-account'.</msg>
+<msg timestamp="20220530 17:28:44.180" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-20.log</msg>
+<status status="PASS" starttime="20220530 17:28:44.179" endtime="20220530 17:28:49.986"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:28:49.986" endtime="20220530 17:28:50.069"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:28:50.069" endtime="20220530 17:28:50.070"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:44.179" endtime="20220530 17:28:50.071"/>
+</kw>
+<kw name="Fill in login field" library="LoginPage">
+<arg>${login_email_positive}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_FIELD_LP}</arg>
+<arg>${login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:28:50.071" level="INFO">Typing text 'bob@sparkley.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220530 17:28:50.071" endtime="20220530 17:28:50.107"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:50.071" endtime="20220530 17:28:50.108"/>
+</kw>
+<kw name="Log in" library="LoginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGNIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:28:50.108" level="INFO">Clicking element 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20220530 17:28:50.108" endtime="20220530 17:28:52.178"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220530 17:28:53.179" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220530 17:28:52.179" endtime="20220530 17:28:53.179"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:50.108" endtime="20220530 17:28:53.180"/>
+</kw>
+<kw name="Verify information about login" library="LoginPage">
+<arg>${alert_login_password}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_FIELD}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:28:53.181" endtime="20220530 17:28:53.208"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${information}</var>
+<arg>${ALERT_FIELD}</arg>
+<arg>attribute=textContent</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:28:53.221" level="INFO">${information} = Password is required.</msg>
+<status status="PASS" starttime="20220530 17:28:53.208" endtime="20220530 17:28:53.221"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${information}</arg>
+<arg>${alert}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20220530 17:28:53.221" endtime="20220530 17:28:53.221"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:53.180" endtime="20220530 17:28:53.221"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:28:53.221" endtime="20220530 17:28:53.596"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:44.178" endtime="20220530 17:28:53.596"/>
+</test>
+<test id="s1-s2-t4" name="Verify negative login with incorrect email syntax">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:28:53.598" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php?controller=my-account'.</msg>
+<msg timestamp="20220530 17:28:53.598" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-21.log</msg>
+<status status="PASS" starttime="20220530 17:28:53.597" endtime="20220530 17:28:58.680"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:28:58.681" endtime="20220530 17:28:58.757"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:28:58.758" endtime="20220530 17:28:58.761"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:53.597" endtime="20220530 17:28:58.761"/>
+</kw>
+<kw name="Fill in login field" library="LoginPage">
+<arg>${login_incorrect_syntax_email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_FIELD_LP}</arg>
+<arg>${login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:28:58.763" level="INFO">Typing text 'bobsparkley.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220530 17:28:58.762" endtime="20220530 17:28:58.798"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:58.762" endtime="20220530 17:28:58.798"/>
+</kw>
+<kw name="Fill in password field" library="LoginPage">
+<arg>${login_password_positive}</arg>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD_FIELD_LP}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:28:58.799" level="INFO">Typing password into text field 'id:passwd'.</msg>
+<msg timestamp="20220530 17:28:58.803" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220530 17:28:58.820" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220530 17:28:58.798" endtime="20220530 17:28:58.820"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:58.798" endtime="20220530 17:28:58.820"/>
+</kw>
+<kw name="Log in" library="LoginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGNIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:28:58.821" level="INFO">Clicking element 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20220530 17:28:58.820" endtime="20220530 17:29:01.145"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220530 17:29:02.146" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220530 17:29:01.146" endtime="20220530 17:29:02.147"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:58.820" endtime="20220530 17:29:02.147"/>
+</kw>
+<kw name="Verify information about login" library="LoginPage">
+<arg>${alert_login_syntax_email}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_FIELD}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:29:02.149" endtime="20220530 17:29:02.176"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${information}</var>
+<arg>${ALERT_FIELD}</arg>
+<arg>attribute=textContent</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:29:02.190" level="INFO">${information} = Invalid email address.</msg>
+<status status="PASS" starttime="20220530 17:29:02.177" endtime="20220530 17:29:02.190"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${information}</arg>
+<arg>${alert}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20220530 17:29:02.190" endtime="20220530 17:29:02.191"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:02.148" endtime="20220530 17:29:02.191"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:29:02.191" endtime="20220530 17:29:02.580"/>
+</kw>
+<status status="PASS" starttime="20220530 17:28:53.597" endtime="20220530 17:29:02.581"/>
+</test>
+<test id="s1-s2-t5" name="Verify negative login with email not in database">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:29:02.583" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php?controller=my-account'.</msg>
+<msg timestamp="20220530 17:29:02.583" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-22.log</msg>
+<status status="PASS" starttime="20220530 17:29:02.582" endtime="20220530 17:29:08.587"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:29:08.587" endtime="20220530 17:29:08.669"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:29:08.669" endtime="20220530 17:29:08.671"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:02.582" endtime="20220530 17:29:08.671"/>
+</kw>
+<kw name="Fill in login field" library="LoginPage">
+<arg>${login_email_not_in_database}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_FIELD_LP}</arg>
+<arg>${login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:08.672" level="INFO">Typing text 'bb000b@sparkley.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220530 17:29:08.671" endtime="20220530 17:29:08.712"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:08.671" endtime="20220530 17:29:08.713"/>
+</kw>
+<kw name="Fill in password field" library="LoginPage">
+<arg>${login_password_positive}</arg>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD_FIELD_LP}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:08.713" level="INFO">Typing password into text field 'id:passwd'.</msg>
+<msg timestamp="20220530 17:29:08.718" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220530 17:29:08.736" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220530 17:29:08.713" endtime="20220530 17:29:08.736"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:08.713" endtime="20220530 17:29:08.736"/>
+</kw>
+<kw name="Log in" library="LoginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGNIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:08.737" level="INFO">Clicking element 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20220530 17:29:08.737" endtime="20220530 17:29:09.855"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220530 17:29:10.856" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220530 17:29:09.856" endtime="20220530 17:29:10.856"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:08.737" endtime="20220530 17:29:10.857"/>
+</kw>
+<kw name="Verify information about login" library="LoginPage">
+<arg>${alert_login_auth_failed}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_FIELD}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:29:10.858" endtime="20220530 17:29:10.883"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${information}</var>
+<arg>${ALERT_FIELD}</arg>
+<arg>attribute=textContent</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:29:10.895" level="INFO">${information} = Authentication failed.</msg>
+<status status="PASS" starttime="20220530 17:29:10.883" endtime="20220530 17:29:10.895"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${information}</arg>
+<arg>${alert}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20220530 17:29:10.895" endtime="20220530 17:29:10.895"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:10.857" endtime="20220530 17:29:10.895"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:29:10.895" endtime="20220530 17:29:11.275"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:02.581" endtime="20220530 17:29:11.275"/>
+</test>
+<test id="s1-s2-t6" name="Verify negative login with wrong password">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:29:11.277" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php?controller=my-account'.</msg>
+<msg timestamp="20220530 17:29:11.277" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-23.log</msg>
+<status status="PASS" starttime="20220530 17:29:11.276" endtime="20220530 17:29:17.314"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:29:17.314" endtime="20220530 17:29:17.393"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:29:17.393" endtime="20220530 17:29:17.395"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:11.276" endtime="20220530 17:29:17.395"/>
+</kw>
+<kw name="Fill in login field" library="LoginPage">
+<arg>${login_email_positive}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_FIELD_LP}</arg>
+<arg>${login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:17.396" level="INFO">Typing text 'bob@sparkley.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220530 17:29:17.396" endtime="20220530 17:29:17.431"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:17.395" endtime="20220530 17:29:17.431"/>
+</kw>
+<kw name="Fill in password field" library="LoginPage">
+<arg>${login_password_positive}333</arg>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD_FIELD_LP}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:17.432" level="INFO">Typing password into text field 'id:passwd'.</msg>
+<msg timestamp="20220530 17:29:17.436" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220530 17:29:17.454" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220530 17:29:17.431" endtime="20220530 17:29:17.454"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:17.431" endtime="20220530 17:29:17.454"/>
+</kw>
+<kw name="Log in" library="LoginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGNIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:17.455" level="INFO">Clicking element 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20220530 17:29:17.454" endtime="20220530 17:29:18.359"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220530 17:29:19.359" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220530 17:29:18.359" endtime="20220530 17:29:19.360"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:17.454" endtime="20220530 17:29:19.360"/>
+</kw>
+<kw name="Verify information about login" library="LoginPage">
+<arg>${alert_login_auth_failed}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_FIELD}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:29:19.361" endtime="20220530 17:29:19.384"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${information}</var>
+<arg>${ALERT_FIELD}</arg>
+<arg>attribute=textContent</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:29:19.395" level="INFO">${information} = Authentication failed.</msg>
+<status status="PASS" starttime="20220530 17:29:19.384" endtime="20220530 17:29:19.395"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${information}</arg>
+<arg>${alert}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20220530 17:29:19.395" endtime="20220530 17:29:19.395"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:19.360" endtime="20220530 17:29:19.395"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:11.275" endtime="20220530 17:29:19.395"/>
+</test>
+<test id="s1-s2-t7" name="Verify positive login">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:29:19.396" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php?controller=my-account'.</msg>
+<msg timestamp="20220530 17:29:19.397" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-24.log</msg>
+<status status="PASS" starttime="20220530 17:29:19.396" endtime="20220530 17:29:24.458"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:29:24.458" endtime="20220530 17:29:24.536"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:29:24.536" endtime="20220530 17:29:24.538"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:19.396" endtime="20220530 17:29:24.538"/>
+</kw>
+<kw name="Fill in login field" library="LoginPage">
+<arg>${login_email_positive}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_FIELD_LP}</arg>
+<arg>${login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:24.539" level="INFO">Typing text 'bob@sparkley.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220530 17:29:24.538" endtime="20220530 17:29:24.576"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:24.538" endtime="20220530 17:29:24.576"/>
+</kw>
+<kw name="Fill in password field" library="LoginPage">
+<arg>${login_password_positive}</arg>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD_FIELD_LP}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:24.578" level="INFO">Typing password into text field 'id:passwd'.</msg>
+<msg timestamp="20220530 17:29:24.583" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220530 17:29:24.599" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220530 17:29:24.577" endtime="20220530 17:29:24.599"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:24.576" endtime="20220530 17:29:24.599"/>
+</kw>
+<kw name="Log in" library="LoginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGNIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:24.600" level="INFO">Clicking element 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20220530 17:29:24.600" endtime="20220530 17:29:26.263"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220530 17:29:27.263" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220530 17:29:26.263" endtime="20220530 17:29:27.264"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:24.600" endtime="20220530 17:29:27.264"/>
+</kw>
+<kw name="Verify positive login" library="LoginPage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${ap_head_title_auth_positive}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220530 17:29:27.268" level="INFO">Page title is 'My account - My Store'.</msg>
+<status status="PASS" starttime="20220530 17:29:27.265" endtime="20220530 17:29:27.268"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:27.264" endtime="20220530 17:29:27.269"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:29:27.269" endtime="20220530 17:29:27.659"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:19.396" endtime="20220530 17:29:27.659"/>
+</test>
+<doc>Page Object in Robot Framework @ automationpractice.com</doc>
+<status status="PASS" starttime="20220530 17:28:21.209" endtime="20220530 17:29:27.660"/>
+</suite>
+<suite id="s1-s3" name="RegistrationPageTests" source="/home/robert/Pulpit/tester/robot-practice/Tests/RegistrationPageTests.robot">
+<test id="s1-s3-t1" name="Verify negative registration with email already exist in database">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:29:27.669" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php?controller=my-account'.</msg>
+<msg timestamp="20220530 17:29:27.669" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-25.log</msg>
+<status status="PASS" starttime="20220530 17:29:27.669" endtime="20220530 17:29:32.763"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:29:32.763" endtime="20220530 17:29:32.846"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:29:32.846" endtime="20220530 17:29:32.847"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:27.668" endtime="20220530 17:29:32.848"/>
+</kw>
+<kw name="Fill in an email field" library="RegistrationPage">
+<arg>${register_mail_already_taken}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_FIELD_RP}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:32.848" level="INFO">Typing text 'aa@aa.com' into text field 'id:email_create'.</msg>
+<status status="PASS" starttime="20220530 17:29:32.848" endtime="20220530 17:29:32.879"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:32.848" endtime="20220530 17:29:32.880"/>
+</kw>
+<kw name="Click create an account" library="RegistrationPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CREATE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:32.880" level="INFO">Clicking element 'id:SubmitCreate'.</msg>
+<status status="PASS" starttime="20220530 17:29:32.880" endtime="20220530 17:29:33.116"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:32.880" endtime="20220530 17:29:33.116"/>
+</kw>
+<kw name="Verify information about negative registration" library="RegistrationPage">
+<arg>${alert_email_already_exist}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_FIELD}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:29:33.117" endtime="20220530 17:29:33.583"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${information}</var>
+<arg>${ALERT_FIELD}</arg>
+<arg>attribute=textContent</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:29:33.594" level="INFO">${information} = An account using this email address has already been registered. Please enter a valid password or request a new one. </msg>
+<status status="PASS" starttime="20220530 17:29:33.583" endtime="20220530 17:29:33.594"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${information}</arg>
+<arg>${alert}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20220530 17:29:33.594" endtime="20220530 17:29:33.594"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:33.116" endtime="20220530 17:29:33.594"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:29:33.595" endtime="20220530 17:29:33.959"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:27.668" endtime="20220530 17:29:33.960"/>
+</test>
+<test id="s1-s3-t2" name="Verify negative registration with invalid date of birth">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:29:33.961" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php?controller=my-account'.</msg>
+<msg timestamp="20220530 17:29:33.961" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-26.log</msg>
+<status status="PASS" starttime="20220530 17:29:33.961" endtime="20220530 17:29:39.178"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:29:39.179" endtime="20220530 17:29:39.262"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:29:39.263" endtime="20220530 17:29:39.264"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:33.960" endtime="20220530 17:29:39.264"/>
+</kw>
+<kw name="Generate fake email" library="RegistrationPage">
+<var>${email}</var>
+<kw name="Fake Email" library="fakeemail">
+<var>${fakeemail}</var>
+<arg>char</arg>
+<msg timestamp="20220530 17:29:39.284" level="INFO">${fakeemail} = jacobgoodman994@erinmiller852.com</msg>
+<status status="PASS" starttime="20220530 17:29:39.264" endtime="20220530 17:29:39.284"/>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>${fakeemail}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<msg timestamp="20220530 17:29:39.284" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20220530 17:29:39.284" endtime="20220530 17:29:39.285"/>
+</kw>
+<msg timestamp="20220530 17:29:39.285" level="INFO">${email} = jacobgoodman994@erinmiller852.com</msg>
+<status status="PASS" starttime="20220530 17:29:39.264" endtime="20220530 17:29:39.285"/>
+</kw>
+<kw name="Fill in an email field" library="RegistrationPage">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_FIELD_RP}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:39.286" level="INFO">Typing text 'jacobgoodman994@erinmiller852.com' into text field 'id:email_create'.</msg>
+<status status="PASS" starttime="20220530 17:29:39.285" endtime="20220530 17:29:39.332"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:39.285" endtime="20220530 17:29:39.332"/>
+</kw>
+<kw name="Click create an account" library="RegistrationPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CREATE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:39.332" level="INFO">Clicking element 'id:SubmitCreate'.</msg>
+<status status="PASS" starttime="20220530 17:29:39.332" endtime="20220530 17:29:39.573"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:39.332" endtime="20220530 17:29:39.574"/>
+</kw>
+<kw name="Fill in the registration form" library="RegistrationPage">
+<arg>${GENDER_MR_CHECKBOX}</arg>
+<arg>${register_password}</arg>
+<arg>${register_date_day}</arg>
+<arg>${register_date_month_invalid}</arg>
+<arg>${register_date_year}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${GENDER_MR_CHECKBOX}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:29:39.576" endtime="20220530 17:29:44.294"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:44.294" level="INFO">Clicking element 'id:uniform-id_gender1'.</msg>
+<status status="PASS" starttime="20220530 17:29:44.294" endtime="20220530 17:29:44.511"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${register_firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:44.512" level="INFO">Typing text 'Bob' into text field 'id:customer_firstname'.</msg>
+<status status="PASS" starttime="20220530 17:29:44.512" endtime="20220530 17:29:44.540"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${register_lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:44.541" level="INFO">Typing text 'Sparkley' into text field 'id:customer_lastname'.</msg>
+<status status="PASS" starttime="20220530 17:29:44.541" endtime="20220530 17:29:44.560"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${password}&quot; == &quot;blank&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>Blank password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220530 17:29:44.560" endtime="20220530 17:29:44.560"/>
+</kw>
+<status status="NOT RUN" starttime="20220530 17:29:44.560" endtime="20220530 17:29:44.560"/>
+</branch>
+<branch type="ELSE">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PASSWORD_FIELD_RP}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:44.560" level="INFO">Typing text '12345' into text field 'id:passwd'.</msg>
+<status status="PASS" starttime="20220530 17:29:44.560" endtime="20220530 17:29:44.577"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:44.560" endtime="20220530 17:29:44.577"/>
+</branch>
+<status status="PASS" starttime="20220530 17:29:44.560" endtime="20220530 17:29:44.577"/>
+</if>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_DAY_SELECTOR}</arg>
+<arg>${day}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:29:44.577" level="INFO">Selecting options from selection list 'id:days' by value 30.</msg>
+<status status="PASS" starttime="20220530 17:29:44.577" endtime="20220530 17:29:44.801"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_MONTH_SELECTOR}</arg>
+<arg>${month}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:29:44.802" level="INFO">Selecting options from selection list 'id:months' by value 2.</msg>
+<status status="PASS" starttime="20220530 17:29:44.801" endtime="20220530 17:29:45.040"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_YEAR_SELECTOR}</arg>
+<arg>${year}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:29:45.041" level="INFO">Selecting options from selection list 'id:years' by value 1950.</msg>
+<status status="PASS" starttime="20220530 17:29:45.041" endtime="20220530 17:29:45.274"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ADDRESS_FIELD}</arg>
+<arg>${register_address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:45.276" level="INFO">Typing text 'Avenue Street 30C' into text field 'id:address1'.</msg>
+<status status="PASS" starttime="20220530 17:29:45.275" endtime="20220530 17:29:45.309"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CITY_FIELD}</arg>
+<arg>${register_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:45.310" level="INFO">Typing text 'Montgomery' into text field 'id:city'.</msg>
+<status status="PASS" starttime="20220530 17:29:45.310" endtime="20220530 17:29:45.327"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${STATE_SELECTOR}</arg>
+<arg>${register_state}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:29:45.328" level="INFO">Selecting options from selection list 'id:id_state' by value 1.</msg>
+<status status="PASS" starttime="20220530 17:29:45.327" endtime="20220530 17:29:45.551"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${POSTCODE_FIELD}</arg>
+<arg>${register_postcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:45.551" level="INFO">Typing text '36043' into text field 'id:postcode'.</msg>
+<status status="PASS" starttime="20220530 17:29:45.551" endtime="20220530 17:29:45.581"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PHONE_FIELD}</arg>
+<arg>${register_phonenumber}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:45.581" level="INFO">Typing text '733210209' into text field 'id:phone_mobile'.</msg>
+<status status="PASS" starttime="20220530 17:29:45.581" endtime="20220530 17:29:45.598"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:39.574" endtime="20220530 17:29:45.598"/>
+</kw>
+<kw name="Check email field" library="RegistrationPage">
+<arg>${email}</arg>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${email_from_form}</var>
+<arg>${email_check_field}</arg>
+<arg>attribute=value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:29:45.610" level="INFO">${email_from_form} = jacobgoodman994@erinmiller852.com</msg>
+<status status="PASS" starttime="20220530 17:29:45.598" endtime="20220530 17:29:45.610"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${email}</arg>
+<arg>${email_from_form}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220530 17:29:45.610" endtime="20220530 17:29:45.610"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:45.598" endtime="20220530 17:29:45.610"/>
+</kw>
+<kw name="Submit registration form" library="RegistrationPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:45.611" level="INFO">Clicking element 'id:submitAccount'.</msg>
+<status status="PASS" starttime="20220530 17:29:45.611" endtime="20220530 17:29:47.660"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:45.611" endtime="20220530 17:29:47.660"/>
+</kw>
+<kw name="Verify information about negative registration" library="RegistrationPage">
+<arg>${alert_invalid_date_of_birth}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_FIELD}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:29:47.660" endtime="20220530 17:29:47.678"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${information}</var>
+<arg>${ALERT_FIELD}</arg>
+<arg>attribute=textContent</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:29:47.691" level="INFO">${information} = Invalid date of birth</msg>
+<status status="PASS" starttime="20220530 17:29:47.678" endtime="20220530 17:29:47.692"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${information}</arg>
+<arg>${alert}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20220530 17:29:47.692" endtime="20220530 17:29:47.692"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:47.660" endtime="20220530 17:29:47.692"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:29:47.692" endtime="20220530 17:29:48.084"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:33.960" endtime="20220530 17:29:48.084"/>
+</test>
+<test id="s1-s3-t3" name="Verify negative registration with short password">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:29:48.087" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php?controller=my-account'.</msg>
+<msg timestamp="20220530 17:29:48.087" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-27.log</msg>
+<status status="PASS" starttime="20220530 17:29:48.086" endtime="20220530 17:29:53.357"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:29:53.358" endtime="20220530 17:29:53.438"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:29:53.438" endtime="20220530 17:29:53.439"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:48.086" endtime="20220530 17:29:53.440"/>
+</kw>
+<kw name="Generate fake email" library="RegistrationPage">
+<var>${email}</var>
+<kw name="Fake Email" library="fakeemail">
+<var>${fakeemail}</var>
+<arg>char</arg>
+<msg timestamp="20220530 17:29:53.449" level="INFO">${fakeemail} = josephclements901@josephhoward325.com</msg>
+<status status="PASS" starttime="20220530 17:29:53.440" endtime="20220530 17:29:53.449"/>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>${fakeemail}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<msg timestamp="20220530 17:29:53.449" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20220530 17:29:53.449" endtime="20220530 17:29:53.449"/>
+</kw>
+<msg timestamp="20220530 17:29:53.449" level="INFO">${email} = josephclements901@josephhoward325.com</msg>
+<status status="PASS" starttime="20220530 17:29:53.440" endtime="20220530 17:29:53.449"/>
+</kw>
+<kw name="Fill in an email field" library="RegistrationPage">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_FIELD_RP}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:53.450" level="INFO">Typing text 'josephclements901@josephhoward325.com' into text field 'id:email_create'.</msg>
+<status status="PASS" starttime="20220530 17:29:53.449" endtime="20220530 17:29:53.497"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:53.449" endtime="20220530 17:29:53.497"/>
+</kw>
+<kw name="Click create an account" library="RegistrationPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CREATE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:53.498" level="INFO">Clicking element 'id:SubmitCreate'.</msg>
+<status status="PASS" starttime="20220530 17:29:53.498" endtime="20220530 17:29:53.739"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:53.497" endtime="20220530 17:29:53.739"/>
+</kw>
+<kw name="Fill in the registration form" library="RegistrationPage">
+<arg>${GENDER_MR_CHECKBOX}</arg>
+<arg>1234</arg>
+<arg>${register_date_day}</arg>
+<arg>${register_date_month}</arg>
+<arg>${register_date_year}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${GENDER_MR_CHECKBOX}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:29:53.741" endtime="20220530 17:29:55.629"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:55.629" level="INFO">Clicking element 'id:uniform-id_gender1'.</msg>
+<status status="PASS" starttime="20220530 17:29:55.629" endtime="20220530 17:29:55.844"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${register_firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:55.845" level="INFO">Typing text 'Bob' into text field 'id:customer_firstname'.</msg>
+<status status="PASS" starttime="20220530 17:29:55.844" endtime="20220530 17:29:55.879"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${register_lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:55.880" level="INFO">Typing text 'Sparkley' into text field 'id:customer_lastname'.</msg>
+<status status="PASS" starttime="20220530 17:29:55.879" endtime="20220530 17:29:55.906"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${password}&quot; == &quot;blank&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>Blank password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220530 17:29:55.906" endtime="20220530 17:29:55.906"/>
+</kw>
+<status status="NOT RUN" starttime="20220530 17:29:55.906" endtime="20220530 17:29:55.906"/>
+</branch>
+<branch type="ELSE">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PASSWORD_FIELD_RP}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:55.907" level="INFO">Typing text '1234' into text field 'id:passwd'.</msg>
+<status status="PASS" starttime="20220530 17:29:55.907" endtime="20220530 17:29:55.922"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:55.907" endtime="20220530 17:29:55.922"/>
+</branch>
+<status status="PASS" starttime="20220530 17:29:55.906" endtime="20220530 17:29:55.922"/>
+</if>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_DAY_SELECTOR}</arg>
+<arg>${day}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:29:55.922" level="INFO">Selecting options from selection list 'id:days' by value 30.</msg>
+<status status="PASS" starttime="20220530 17:29:55.922" endtime="20220530 17:29:56.147"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_MONTH_SELECTOR}</arg>
+<arg>${month}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:29:56.148" level="INFO">Selecting options from selection list 'id:months' by value 1.</msg>
+<status status="PASS" starttime="20220530 17:29:56.148" endtime="20220530 17:29:56.381"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_YEAR_SELECTOR}</arg>
+<arg>${year}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:29:56.382" level="INFO">Selecting options from selection list 'id:years' by value 1950.</msg>
+<status status="PASS" starttime="20220530 17:29:56.382" endtime="20220530 17:29:56.620"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ADDRESS_FIELD}</arg>
+<arg>${register_address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:56.621" level="INFO">Typing text 'Avenue Street 30C' into text field 'id:address1'.</msg>
+<status status="PASS" starttime="20220530 17:29:56.620" endtime="20220530 17:29:56.659"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CITY_FIELD}</arg>
+<arg>${register_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:56.659" level="INFO">Typing text 'Montgomery' into text field 'id:city'.</msg>
+<status status="PASS" starttime="20220530 17:29:56.659" endtime="20220530 17:29:56.676"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${STATE_SELECTOR}</arg>
+<arg>${register_state}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:29:56.677" level="INFO">Selecting options from selection list 'id:id_state' by value 1.</msg>
+<status status="PASS" starttime="20220530 17:29:56.677" endtime="20220530 17:29:56.915"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${POSTCODE_FIELD}</arg>
+<arg>${register_postcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:56.916" level="INFO">Typing text '36043' into text field 'id:postcode'.</msg>
+<status status="PASS" starttime="20220530 17:29:56.915" endtime="20220530 17:29:56.949"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PHONE_FIELD}</arg>
+<arg>${register_phonenumber}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:56.949" level="INFO">Typing text '733210209' into text field 'id:phone_mobile'.</msg>
+<status status="PASS" starttime="20220530 17:29:56.949" endtime="20220530 17:29:56.964"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:53.740" endtime="20220530 17:29:56.964"/>
+</kw>
+<kw name="Check email field" library="RegistrationPage">
+<arg>${email}</arg>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${email_from_form}</var>
+<arg>${email_check_field}</arg>
+<arg>attribute=value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:29:56.974" level="INFO">${email_from_form} = josephclements901@josephhoward325.com</msg>
+<status status="PASS" starttime="20220530 17:29:56.964" endtime="20220530 17:29:56.974"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${email}</arg>
+<arg>${email_from_form}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220530 17:29:56.975" endtime="20220530 17:29:56.975"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:56.964" endtime="20220530 17:29:56.975"/>
+</kw>
+<kw name="Submit registration form" library="RegistrationPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:29:56.975" level="INFO">Clicking element 'id:submitAccount'.</msg>
+<status status="PASS" starttime="20220530 17:29:56.975" endtime="20220530 17:29:58.597"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:56.975" endtime="20220530 17:29:58.597"/>
+</kw>
+<kw name="Verify information about negative registration" library="RegistrationPage">
+<arg>${alert_short_password}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_FIELD}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:29:58.598" endtime="20220530 17:29:58.616"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${information}</var>
+<arg>${ALERT_FIELD}</arg>
+<arg>attribute=textContent</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:29:58.632" level="INFO">${information} = passwd is invalid.</msg>
+<status status="PASS" starttime="20220530 17:29:58.616" endtime="20220530 17:29:58.632"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${information}</arg>
+<arg>${alert}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20220530 17:29:58.632" endtime="20220530 17:29:58.632"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:58.597" endtime="20220530 17:29:58.632"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:29:58.633" endtime="20220530 17:29:59.025"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:48.085" endtime="20220530 17:29:59.025"/>
+</test>
+<test id="s1-s3-t4" name="Verify negative registration with blank password">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:29:59.027" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php?controller=my-account'.</msg>
+<msg timestamp="20220530 17:29:59.027" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-28.log</msg>
+<status status="PASS" starttime="20220530 17:29:59.026" endtime="20220530 17:30:04.398"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:30:04.398" endtime="20220530 17:30:04.481"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:30:04.482" endtime="20220530 17:30:04.483"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:59.026" endtime="20220530 17:30:04.484"/>
+</kw>
+<kw name="Generate fake email" library="RegistrationPage">
+<var>${email}</var>
+<kw name="Fake Email" library="fakeemail">
+<var>${fakeemail}</var>
+<arg>char</arg>
+<msg timestamp="20220530 17:30:04.493" level="INFO">${fakeemail} = johnparrish711@brandonconley954.com</msg>
+<status status="PASS" starttime="20220530 17:30:04.485" endtime="20220530 17:30:04.493"/>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>${fakeemail}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<msg timestamp="20220530 17:30:04.493" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20220530 17:30:04.493" endtime="20220530 17:30:04.493"/>
+</kw>
+<msg timestamp="20220530 17:30:04.493" level="INFO">${email} = johnparrish711@brandonconley954.com</msg>
+<status status="PASS" starttime="20220530 17:30:04.484" endtime="20220530 17:30:04.493"/>
+</kw>
+<kw name="Fill in an email field" library="RegistrationPage">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_FIELD_RP}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:04.494" level="INFO">Typing text 'johnparrish711@brandonconley954.com' into text field 'id:email_create'.</msg>
+<status status="PASS" starttime="20220530 17:30:04.494" endtime="20220530 17:30:04.540"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:04.494" endtime="20220530 17:30:04.540"/>
+</kw>
+<kw name="Click create an account" library="RegistrationPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CREATE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:04.541" level="INFO">Clicking element 'id:SubmitCreate'.</msg>
+<status status="PASS" starttime="20220530 17:30:04.541" endtime="20220530 17:30:04.781"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:04.541" endtime="20220530 17:30:04.781"/>
+</kw>
+<kw name="Fill in the registration form" library="RegistrationPage">
+<arg>${GENDER_MR_CHECKBOX}</arg>
+<arg>blank</arg>
+<arg>${register_date_day}</arg>
+<arg>${register_date_month}</arg>
+<arg>${register_date_year}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${GENDER_MR_CHECKBOX}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:30:04.783" endtime="20220530 17:30:07.529"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:07.529" level="INFO">Clicking element 'id:uniform-id_gender1'.</msg>
+<status status="PASS" starttime="20220530 17:30:07.529" endtime="20220530 17:30:07.744"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${register_firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:07.745" level="INFO">Typing text 'Bob' into text field 'id:customer_firstname'.</msg>
+<status status="PASS" starttime="20220530 17:30:07.745" endtime="20220530 17:30:07.778"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${register_lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:07.778" level="INFO">Typing text 'Sparkley' into text field 'id:customer_lastname'.</msg>
+<status status="PASS" starttime="20220530 17:30:07.778" endtime="20220530 17:30:07.796"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${password}&quot; == &quot;blank&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>Blank password</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220530 17:30:07.797" level="INFO">Blank password</msg>
+<status status="PASS" starttime="20220530 17:30:07.796" endtime="20220530 17:30:07.797"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:07.796" endtime="20220530 17:30:07.797"/>
+</branch>
+<branch type="ELSE">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PASSWORD_FIELD_RP}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220530 17:30:07.797" endtime="20220530 17:30:07.797"/>
+</kw>
+<status status="NOT RUN" starttime="20220530 17:30:07.797" endtime="20220530 17:30:07.797"/>
+</branch>
+<status status="PASS" starttime="20220530 17:30:07.796" endtime="20220530 17:30:07.797"/>
+</if>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_DAY_SELECTOR}</arg>
+<arg>${day}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:30:07.797" level="INFO">Selecting options from selection list 'id:days' by value 30.</msg>
+<status status="PASS" starttime="20220530 17:30:07.797" endtime="20220530 17:30:08.027"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_MONTH_SELECTOR}</arg>
+<arg>${month}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:30:08.028" level="INFO">Selecting options from selection list 'id:months' by value 1.</msg>
+<status status="PASS" starttime="20220530 17:30:08.027" endtime="20220530 17:30:08.264"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_YEAR_SELECTOR}</arg>
+<arg>${year}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:30:08.265" level="INFO">Selecting options from selection list 'id:years' by value 1950.</msg>
+<status status="PASS" starttime="20220530 17:30:08.264" endtime="20220530 17:30:08.505"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ADDRESS_FIELD}</arg>
+<arg>${register_address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:08.506" level="INFO">Typing text 'Avenue Street 30C' into text field 'id:address1'.</msg>
+<status status="PASS" starttime="20220530 17:30:08.506" endtime="20220530 17:30:08.541"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CITY_FIELD}</arg>
+<arg>${register_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:08.541" level="INFO">Typing text 'Montgomery' into text field 'id:city'.</msg>
+<status status="PASS" starttime="20220530 17:30:08.541" endtime="20220530 17:30:08.558"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${STATE_SELECTOR}</arg>
+<arg>${register_state}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:30:08.559" level="INFO">Selecting options from selection list 'id:id_state' by value 1.</msg>
+<status status="PASS" starttime="20220530 17:30:08.558" endtime="20220530 17:30:08.781"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${POSTCODE_FIELD}</arg>
+<arg>${register_postcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:08.782" level="INFO">Typing text '36043' into text field 'id:postcode'.</msg>
+<status status="PASS" starttime="20220530 17:30:08.781" endtime="20220530 17:30:08.818"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PHONE_FIELD}</arg>
+<arg>${register_phonenumber}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:08.819" level="INFO">Typing text '733210209' into text field 'id:phone_mobile'.</msg>
+<status status="PASS" starttime="20220530 17:30:08.818" endtime="20220530 17:30:08.836"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:04.781" endtime="20220530 17:30:08.836"/>
+</kw>
+<kw name="Check email field" library="RegistrationPage">
+<arg>${email}</arg>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${email_from_form}</var>
+<arg>${email_check_field}</arg>
+<arg>attribute=value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:30:08.847" level="INFO">${email_from_form} = johnparrish711@brandonconley954.com</msg>
+<status status="PASS" starttime="20220530 17:30:08.837" endtime="20220530 17:30:08.847"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${email}</arg>
+<arg>${email_from_form}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220530 17:30:08.848" endtime="20220530 17:30:08.848"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:08.837" endtime="20220530 17:30:08.848"/>
+</kw>
+<kw name="Submit registration form" library="RegistrationPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:08.848" level="INFO">Clicking element 'id:submitAccount'.</msg>
+<status status="PASS" starttime="20220530 17:30:08.848" endtime="20220530 17:30:10.939"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:08.848" endtime="20220530 17:30:10.939"/>
+</kw>
+<kw name="Verify information about negative registration" library="RegistrationPage">
+<arg>${alert_blank_password}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_FIELD}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:30:10.940" endtime="20220530 17:30:10.958"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${information}</var>
+<arg>${ALERT_FIELD}</arg>
+<arg>attribute=textContent</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:30:10.972" level="INFO">${information} = passwd is required.</msg>
+<status status="PASS" starttime="20220530 17:30:10.958" endtime="20220530 17:30:10.972"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${information}</arg>
+<arg>${alert}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20220530 17:30:10.972" endtime="20220530 17:30:10.973"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:10.939" endtime="20220530 17:30:10.973"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:30:10.973" endtime="20220530 17:30:11.356"/>
+</kw>
+<status status="PASS" starttime="20220530 17:29:59.025" endtime="20220530 17:30:11.356"/>
+</test>
+<test id="s1-s3-t5" name="Verify negative registration with long email">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:30:11.358" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php?controller=my-account'.</msg>
+<msg timestamp="20220530 17:30:11.358" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-29.log</msg>
+<status status="PASS" starttime="20220530 17:30:11.358" endtime="20220530 17:30:18.029"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:30:18.030" endtime="20220530 17:30:18.112"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:30:18.113" endtime="20220530 17:30:18.115"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:11.357" endtime="20220530 17:30:18.115"/>
+</kw>
+<kw name="Fill in an email field" library="RegistrationPage">
+<arg>${register_mail_too_long}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_FIELD_RP}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:18.118" level="INFO">Typing text 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb@aaaaaaaaaaaaaa.com' into text field 'id:email_create'.</msg>
+<status status="PASS" starttime="20220530 17:30:18.116" endtime="20220530 17:30:18.226"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:18.115" endtime="20220530 17:30:18.226"/>
+</kw>
+<kw name="Click create an account" library="RegistrationPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CREATE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:18.226" level="INFO">Clicking element 'id:SubmitCreate'.</msg>
+<status status="PASS" starttime="20220530 17:30:18.226" endtime="20220530 17:30:18.466"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:18.226" endtime="20220530 17:30:18.466"/>
+</kw>
+<kw name="Fill in the registration form" library="RegistrationPage">
+<arg>${GENDER_MR_CHECKBOX}</arg>
+<arg>${register_password}</arg>
+<arg>${register_date_day}</arg>
+<arg>${register_date_month}</arg>
+<arg>${register_date_year}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${GENDER_MR_CHECKBOX}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:30:18.468" endtime="20220530 17:30:20.853"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:20.853" level="INFO">Clicking element 'id:uniform-id_gender1'.</msg>
+<status status="PASS" starttime="20220530 17:30:20.853" endtime="20220530 17:30:21.071"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${register_firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:21.072" level="INFO">Typing text 'Bob' into text field 'id:customer_firstname'.</msg>
+<status status="PASS" starttime="20220530 17:30:21.072" endtime="20220530 17:30:21.095"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${register_lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:21.095" level="INFO">Typing text 'Sparkley' into text field 'id:customer_lastname'.</msg>
+<status status="PASS" starttime="20220530 17:30:21.095" endtime="20220530 17:30:21.113"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${password}&quot; == &quot;blank&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>Blank password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220530 17:30:21.113" endtime="20220530 17:30:21.113"/>
+</kw>
+<status status="NOT RUN" starttime="20220530 17:30:21.113" endtime="20220530 17:30:21.113"/>
+</branch>
+<branch type="ELSE">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PASSWORD_FIELD_RP}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:21.113" level="INFO">Typing text '12345' into text field 'id:passwd'.</msg>
+<status status="PASS" starttime="20220530 17:30:21.113" endtime="20220530 17:30:21.128"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:21.113" endtime="20220530 17:30:21.128"/>
+</branch>
+<status status="PASS" starttime="20220530 17:30:21.113" endtime="20220530 17:30:21.128"/>
+</if>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_DAY_SELECTOR}</arg>
+<arg>${day}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:30:21.129" level="INFO">Selecting options from selection list 'id:days' by value 30.</msg>
+<status status="PASS" starttime="20220530 17:30:21.128" endtime="20220530 17:30:21.355"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_MONTH_SELECTOR}</arg>
+<arg>${month}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:30:21.356" level="INFO">Selecting options from selection list 'id:months' by value 1.</msg>
+<status status="PASS" starttime="20220530 17:30:21.356" endtime="20220530 17:30:21.598"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_YEAR_SELECTOR}</arg>
+<arg>${year}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:30:21.599" level="INFO">Selecting options from selection list 'id:years' by value 1950.</msg>
+<status status="PASS" starttime="20220530 17:30:21.598" endtime="20220530 17:30:21.833"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ADDRESS_FIELD}</arg>
+<arg>${register_address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:21.834" level="INFO">Typing text 'Avenue Street 30C' into text field 'id:address1'.</msg>
+<status status="PASS" starttime="20220530 17:30:21.834" endtime="20220530 17:30:21.863"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CITY_FIELD}</arg>
+<arg>${register_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:21.864" level="INFO">Typing text 'Montgomery' into text field 'id:city'.</msg>
+<status status="PASS" starttime="20220530 17:30:21.863" endtime="20220530 17:30:21.884"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${STATE_SELECTOR}</arg>
+<arg>${register_state}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:30:21.885" level="INFO">Selecting options from selection list 'id:id_state' by value 1.</msg>
+<status status="PASS" starttime="20220530 17:30:21.884" endtime="20220530 17:30:22.109"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${POSTCODE_FIELD}</arg>
+<arg>${register_postcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:22.110" level="INFO">Typing text '36043' into text field 'id:postcode'.</msg>
+<status status="PASS" starttime="20220530 17:30:22.109" endtime="20220530 17:30:22.136"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PHONE_FIELD}</arg>
+<arg>${register_phonenumber}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:22.137" level="INFO">Typing text '733210209' into text field 'id:phone_mobile'.</msg>
+<status status="PASS" starttime="20220530 17:30:22.136" endtime="20220530 17:30:22.153"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:18.466" endtime="20220530 17:30:22.153"/>
+</kw>
+<kw name="Check email field" library="RegistrationPage">
+<arg>${register_mail_too_long}</arg>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${email_from_form}</var>
+<arg>${email_check_field}</arg>
+<arg>attribute=value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:30:22.162" level="INFO">${email_from_form} = aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb@aaaaaaaaaaaaaa.com</msg>
+<status status="PASS" starttime="20220530 17:30:22.153" endtime="20220530 17:30:22.162"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${email}</arg>
+<arg>${email_from_form}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220530 17:30:22.162" endtime="20220530 17:30:22.163"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:22.153" endtime="20220530 17:30:22.163"/>
+</kw>
+<kw name="Submit registration form" library="RegistrationPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:22.163" level="INFO">Clicking element 'id:submitAccount'.</msg>
+<status status="PASS" starttime="20220530 17:30:22.163" endtime="20220530 17:30:23.351"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:22.163" endtime="20220530 17:30:23.351"/>
+</kw>
+<kw name="Verify information about negative registration" library="RegistrationPage">
+<arg>${alert_email_too_long}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_FIELD}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:30:23.352" endtime="20220530 17:30:23.373"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${information}</var>
+<arg>${ALERT_FIELD}</arg>
+<arg>attribute=textContent</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:30:23.385" level="INFO">${information} = email is too long. Maximum length: 128</msg>
+<status status="PASS" starttime="20220530 17:30:23.373" endtime="20220530 17:30:23.385"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${information}</arg>
+<arg>${alert}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20220530 17:30:23.386" endtime="20220530 17:30:23.386"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:23.352" endtime="20220530 17:30:23.386"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:30:23.387" endtime="20220530 17:30:23.766"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:11.357" endtime="20220530 17:30:23.767"/>
+</test>
+<test id="s1-s3-t6" name="Verify positive registration">
+<kw name="Opening Browser" library="Common">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220530 17:30:23.768" level="INFO">Opening browser 'Firefox' to base url 'http://automationpractice.com/index.php?controller=my-account'.</msg>
+<msg timestamp="20220530 17:30:23.768" level="INFO">Firefox driver log is always forced to to: /home/robert/Pulpit/tester/robot-practice/Results/geckodriver-30.log</msg>
+<status status="PASS" starttime="20220530 17:30:23.768" endtime="20220530 17:30:29.921"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:30:29.922" endtime="20220530 17:30:29.999"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220530 17:30:29.999" endtime="20220530 17:30:30.002"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:23.767" endtime="20220530 17:30:30.002"/>
+</kw>
+<kw name="Generate fake email" library="RegistrationPage">
+<var>${email}</var>
+<kw name="Fake Email" library="fakeemail">
+<var>${fakeemail}</var>
+<arg>char</arg>
+<msg timestamp="20220530 17:30:30.010" level="INFO">${fakeemail} = johntran81@natashanelson345.com</msg>
+<status status="PASS" starttime="20220530 17:30:30.002" endtime="20220530 17:30:30.010"/>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>${fakeemail}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<msg timestamp="20220530 17:30:30.010" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20220530 17:30:30.010" endtime="20220530 17:30:30.010"/>
+</kw>
+<msg timestamp="20220530 17:30:30.011" level="INFO">${email} = johntran81@natashanelson345.com</msg>
+<status status="PASS" starttime="20220530 17:30:30.002" endtime="20220530 17:30:30.011"/>
+</kw>
+<kw name="Fill in an email field" library="RegistrationPage">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_FIELD_RP}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:30.011" level="INFO">Typing text 'johntran81@natashanelson345.com' into text field 'id:email_create'.</msg>
+<status status="PASS" starttime="20220530 17:30:30.011" endtime="20220530 17:30:30.056"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:30.011" endtime="20220530 17:30:30.056"/>
+</kw>
+<kw name="Click create an account" library="RegistrationPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CREATE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:30.057" level="INFO">Clicking element 'id:SubmitCreate'.</msg>
+<status status="PASS" starttime="20220530 17:30:30.057" endtime="20220530 17:30:30.296"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:30.056" endtime="20220530 17:30:30.296"/>
+</kw>
+<kw name="Fill in the registration form" library="RegistrationPage">
+<arg>${GENDER_MR_CHECKBOX}</arg>
+<arg>${register_password}</arg>
+<arg>${register_date_day}</arg>
+<arg>${register_date_month}</arg>
+<arg>${register_date_year}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${GENDER_MR_CHECKBOX}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220530 17:30:30.299" endtime="20220530 17:30:32.512"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:32.514" level="INFO">Clicking element 'id:uniform-id_gender1'.</msg>
+<status status="PASS" starttime="20220530 17:30:32.512" endtime="20220530 17:30:32.731"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${register_firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:32.733" level="INFO">Typing text 'Bob' into text field 'id:customer_firstname'.</msg>
+<status status="PASS" starttime="20220530 17:30:32.732" endtime="20220530 17:30:32.760"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${register_lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:32.760" level="INFO">Typing text 'Sparkley' into text field 'id:customer_lastname'.</msg>
+<status status="PASS" starttime="20220530 17:30:32.760" endtime="20220530 17:30:32.777"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${password}&quot; == &quot;blank&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>Blank password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220530 17:30:32.778" endtime="20220530 17:30:32.778"/>
+</kw>
+<status status="NOT RUN" starttime="20220530 17:30:32.778" endtime="20220530 17:30:32.778"/>
+</branch>
+<branch type="ELSE">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PASSWORD_FIELD_RP}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:32.778" level="INFO">Typing text '12345' into text field 'id:passwd'.</msg>
+<status status="PASS" starttime="20220530 17:30:32.778" endtime="20220530 17:30:32.793"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:32.778" endtime="20220530 17:30:32.793"/>
+</branch>
+<status status="PASS" starttime="20220530 17:30:32.778" endtime="20220530 17:30:32.794"/>
+</if>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_DAY_SELECTOR}</arg>
+<arg>${day}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:30:32.794" level="INFO">Selecting options from selection list 'id:days' by value 30.</msg>
+<status status="PASS" starttime="20220530 17:30:32.794" endtime="20220530 17:30:33.021"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_MONTH_SELECTOR}</arg>
+<arg>${month}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:30:33.022" level="INFO">Selecting options from selection list 'id:months' by value 1.</msg>
+<status status="PASS" starttime="20220530 17:30:33.022" endtime="20220530 17:30:33.264"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DATE_YEAR_SELECTOR}</arg>
+<arg>${year}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:30:33.264" level="INFO">Selecting options from selection list 'id:years' by value 1950.</msg>
+<status status="PASS" starttime="20220530 17:30:33.264" endtime="20220530 17:30:33.494"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ADDRESS_FIELD}</arg>
+<arg>${register_address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:33.495" level="INFO">Typing text 'Avenue Street 30C' into text field 'id:address1'.</msg>
+<status status="PASS" starttime="20220530 17:30:33.495" endtime="20220530 17:30:33.535"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CITY_FIELD}</arg>
+<arg>${register_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:33.536" level="INFO">Typing text 'Montgomery' into text field 'id:city'.</msg>
+<status status="PASS" starttime="20220530 17:30:33.535" endtime="20220530 17:30:33.553"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${STATE_SELECTOR}</arg>
+<arg>${register_state}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220530 17:30:33.554" level="INFO">Selecting options from selection list 'id:id_state' by value 1.</msg>
+<status status="PASS" starttime="20220530 17:30:33.553" endtime="20220530 17:30:33.777"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${POSTCODE_FIELD}</arg>
+<arg>${register_postcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:33.778" level="INFO">Typing text '36043' into text field 'id:postcode'.</msg>
+<status status="PASS" starttime="20220530 17:30:33.777" endtime="20220530 17:30:33.796"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PHONE_FIELD}</arg>
+<arg>${register_phonenumber}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:33.797" level="INFO">Typing text '733210209' into text field 'id:phone_mobile'.</msg>
+<status status="PASS" starttime="20220530 17:30:33.796" endtime="20220530 17:30:33.815"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:30.296" endtime="20220530 17:30:33.815"/>
+</kw>
+<kw name="Check email field" library="RegistrationPage">
+<arg>${email}</arg>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${email_from_form}</var>
+<arg>${email_check_field}</arg>
+<arg>attribute=value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220530 17:30:33.826" level="INFO">${email_from_form} = johntran81@natashanelson345.com</msg>
+<status status="PASS" starttime="20220530 17:30:33.816" endtime="20220530 17:30:33.826"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${email}</arg>
+<arg>${email_from_form}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220530 17:30:33.826" endtime="20220530 17:30:33.826"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:33.816" endtime="20220530 17:30:33.826"/>
+</kw>
+<kw name="Submit registration form" library="RegistrationPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220530 17:30:33.827" level="INFO">Clicking element 'id:submitAccount'.</msg>
+<status status="PASS" starttime="20220530 17:30:33.826" endtime="20220530 17:30:36.287"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:33.826" endtime="20220530 17:30:36.287"/>
+</kw>
+<kw name="Verify positive registration" library="RegistrationPage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${ap_head_title_auth_positive}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220530 17:30:36.291" level="INFO">Page title is 'My account - My Store'.</msg>
+<status status="PASS" starttime="20220530 17:30:36.288" endtime="20220530 17:30:36.291"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:36.288" endtime="20220530 17:30:36.291"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220530 17:30:36.291" endtime="20220530 17:30:36.674"/>
+</kw>
+<status status="PASS" starttime="20220530 17:30:23.767" endtime="20220530 17:30:36.674"/>
+</test>
+<doc>Page Object in Robot Framework @ automationpractice.com</doc>
+<status status="PASS" starttime="20220530 17:29:27.662" endtime="20220530 17:30:36.675"/>
+</suite>
+<status status="PASS" starttime="20220530 17:27:08.905" endtime="20220530 17:30:36.678"/>
+</suite>
+<statistics>
+<total>
+<stat pass="19" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="19" fail="0" skip="0" id="s1" name="HomePageTests &amp; LoginPageTests &amp; RegistrationPageTests">HomePageTests &amp; LoginPageTests &amp; RegistrationPageTests</stat>
+<stat pass="6" fail="0" skip="0" id="s1-s1" name="HomePageTests">HomePageTests &amp; LoginPageTests &amp; RegistrationPageTests.HomePageTests</stat>
+<stat pass="7" fail="0" skip="0" id="s1-s2" name="LoginPageTests">HomePageTests &amp; LoginPageTests &amp; RegistrationPageTests.LoginPageTests</stat>
+<stat pass="6" fail="0" skip="0" id="s1-s3" name="RegistrationPageTests">HomePageTests &amp; LoginPageTests &amp; RegistrationPageTests.RegistrationPageTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

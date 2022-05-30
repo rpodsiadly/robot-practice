@@ -7,6 +7,7 @@ Variables  ../TestData/Testdata.py
 Go to subpage
     [Arguments]    ${subpage}
     Click link    ${subpage}
+    Sleep    1
 Verify home page loaded successfully
     Title Should Be     ${hp_head_title}
 Verify authentication page is successfully loaded
