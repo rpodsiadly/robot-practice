@@ -10,7 +10,7 @@ Fill in login field
     Input text    ${EMAIL_FIELD_LP}    ${login}
 Fill in password field
     [Arguments]    ${password}
-    Input password    ${password_field_lp}    ${password}
+    Input password    ${PASSWORD_FIELD_LP}    ${password}
 Log in
     Click element    ${SIGNIN_BUTTON}
 Verify information about login
