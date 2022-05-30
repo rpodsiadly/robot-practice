@@ -24,11 +24,11 @@ register_mail_too_long = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 register_mail_already_taken = "aa@aa.com"
 
   # Register failed - alerts
-reg_alert_email_already_exist = "An account using this email address has already been registered. Please enter a valid password or request a new one."
-reg_alert_invalid_date_of_birth = "Invalid date of birth"
-reg_alert_short_password = "passwd is invalid."
-reg_alert_blank_password = "passwd is required."
-reg_alert_email_too_long = "email is too long."
+alert_email_already_exist = "An account using this email address has already been registered. Please enter a valid password or request a new one."
+alert_invalid_date_of_birth = "Invalid date of birth"
+alert_short_password = "passwd is invalid."
+alert_blank_password = "passwd is required."
+alert_email_too_long = "email is too long."
 
  # Login test data
 login_email_positive = "bob@sparkley.com"
