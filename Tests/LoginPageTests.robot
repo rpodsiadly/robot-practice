@@ -44,7 +44,7 @@ Verify negative login with email not in database
 Verify negative login with wrong password
     Opening Browser    ${site_url}    ${browser}
     Fill in login field    ${login_email_positive}
-    Fill in password field    ${ap_register_password}333
+    Fill in password field    ${login_password_positive}333
     Log in
     Verify information about login    ${alert_login_auth_failed}
 Verify positive login
