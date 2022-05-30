@@ -16,7 +16,7 @@ Verify successful loading homepage
     Close Browser
 Verify successfully navigation to Authentication page
     Opening Browser  ${site_url}  ${browser}
-    Go to subpage    ${AUTHENTICATION}
+    Go to subpage    ${SIGN_IN}
     Verify authentication page is successfully loaded
     Close Browser
 Verify successfully navigation to Women subpage
