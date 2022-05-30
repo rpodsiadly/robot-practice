@@ -35,12 +35,12 @@ ap_alert_blank_password = "passwd is required."
 ap_alert_email_too_long = "email is too long."
 
  # Login test data
-ap_lp_login_email_positive = "bob@sparkley.com"
-ap_lp_login_password_positive = "12345"
-ap_lp_login_incorrect_syntax_email = "bobsparkley.com"
+login_email_positive = "bob@sparkley.com"
+login_password_positive = "12345"
+login_incorrect_syntax_email = "bobsparkley.com"
 ap_lp_login_email_not_in_database = "bb000b@sparkley.com"
  # Login failed - alerts
-ap_alert_login_email = "An email address required."
-ap_alert_login_password = "Password is required."
+alert_login_email = "An email address required."
+alert_login_password = "Password is required."
 ap_alert_login_syntax_email = "Invalid email address."
 ap_alert_login_auth_failed = "Authentication failed."
