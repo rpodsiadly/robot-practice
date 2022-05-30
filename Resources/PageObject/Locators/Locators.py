@@ -1,15 +1,19 @@
+# ALL
+ALERT_FIELD = "xpath://div[contains(@class,'alert alert-danger')]/ol/li"
+
 # HomePageLocators:
-AUTHENTICATION = "partial link:Sign in"
+SIGN_IN = "partial link:Sign in"
 MENU_WOMEN = "xpath://div[contains(@id,'block_top_menu')]/ul/li/a[contains(@title,'Women')]"
 MENU_DRESSES = "xpath://div[contains(@id,'block_top_menu')]/ul/li/a[contains(@title,'Dresses')]"
 MENU_TSHIRTS = "xpath://div[contains(@id,'block_top_menu')]/ul/li/a[contains(@title,'T-shirts')]"
 CART_QUANTITY = "xpath://div[contains(@class,'shopping_cart')]/a/span[contains(@class,'ajax_cart_quantity')]"
 PRODUCTS_PRICES = "xpath://div[contains(@class,'right-block')]/div/span[contains(@itemprop,'price')]"
 SUMMARYCARD_CLOSE = "xpath://span[contains(@class,'cross')]"
+
 # RegistrationPageLocators:
 EMAIL_FIELD_RP = "id:email_create"
 CREATE_BUTTON = "id:SubmitCreate"
-ALERT_FIELD = "xpath://div[contains(@class,'alert alert-danger')]/ol/li"
+  # Registration form
 GENDER_MR_CHECKBOX = "id:uniform-id_gender1"
 GENDER_MRS_CHECKBOX = "id:uniform-id_gender2"
 FIRSTNAME_FIELD = "id:customer_firstname"
@@ -28,6 +32,7 @@ POSTCODE_FIELD = "id:postcode"
 COUNTRY_SELECTOR = "id:id_country"
 PHONE_FIELD = "id:phone_mobile"
 REGISTER_BUTTON = "id:submitAccount"
+
 # LoginPageLocators:
 EMAIL_FIELD_LP = "id:email"
 PASSWORD_FIELD_LP = "id:passwd"
