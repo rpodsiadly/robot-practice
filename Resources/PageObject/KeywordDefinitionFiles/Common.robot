@@ -7,4 +7,4 @@ Variables  ../TestData/Testdata.py
 Opening Browser
     [Arguments]  ${site_url}  ${browser}
     Open Browser   ${site_url}  ${browser}
-    Wait Until Element Is Visible   ${AUTHENTICATION}  timeout=5
+    Wait Until Element Is Visible   ${SIGN_IN}  timeout=5
