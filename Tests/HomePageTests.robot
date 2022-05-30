@@ -37,7 +37,7 @@ Verify successfully navigation to T-shirts subpage
 Verify successfully addition of product to cart with given value
     Opening Browser  ${site_url}  ${browser}
     Go to subpage   ${MENU_DRESSES}
-    Add product from dresses to cart with value   ${hp_price_of_product_we_looking_for}
+    Add product from dresses to cart with value   ${hp_product_price}
     Close summary cart
     Verify successfully added product to cart
     Close Browser
