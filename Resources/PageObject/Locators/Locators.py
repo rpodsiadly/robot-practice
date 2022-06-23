@@ -13,6 +13,11 @@ SUMMARYCARD_CLOSE = "xpath://span[contains(@class,'cross')]"
 # RegistrationPageLocators:
 EMAIL_FIELD_RP = "id:email_create"
 CREATE_BUTTON = "id:SubmitCreate"
+# LoginPageLocators:
+EMAIL_FIELD_LP = "id:email"
+PASSWORD_FIELD_LP = "id:passwd"
+SIGNIN_BUTTON = "id:SubmitLogin"
+
   # Registration form
 GENDER_MR_CHECKBOX = "id:uniform-id_gender1"
 GENDER_MRS_CHECKBOX = "id:uniform-id_gender2"
@@ -33,7 +38,4 @@ COUNTRY_SELECTOR = "id:id_country"
 PHONE_FIELD = "id:phone_mobile"
 REGISTER_BUTTON = "id:submitAccount"
 
-# LoginPageLocators:
-EMAIL_FIELD_LP = "id:email"
-PASSWORD_FIELD_LP = "id:passwd"
-SIGNIN_BUTTON = "id:SubmitLogin"
+
